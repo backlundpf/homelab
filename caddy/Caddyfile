@@ -1,0 +1,37 @@
+agilyticsllc.com,
+www.agilyticsllc.com {
+    respond "Hello there."
+}
+
+backlund.co,
+www.backlund.co {
+    respond "Hello there."
+}
+
+code.backlund.co {
+    reverse_proxy 192.168.86.10:8443
+}
+
+torrent.backlund.co {
+    reverse_proxy 192.168.86.10:9090
+}
+
+stash.backlund.co {
+    reverse_proxy 192.168.86.10:9999
+}
+
+jellyfin.backlund.co {
+    reverse_proxy 192.168.86.10:8096
+}
+
+# gaming.backlund.co {
+    # reverse_proxy 192.168.86.10:47992-48010
+# }
+# 
+# cloud.backlund.co {
+    # reverse_proxy 192.168.86.10:8080
+# }
+# 
+# plex.backlund.co {
+    # reverse_proxy 192.168.86.10:32400
+# }

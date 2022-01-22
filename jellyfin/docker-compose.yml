@@ -1,0 +1,17 @@
+version: "3.5"
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    ports:
+      - "8096:8096"
+    #user: uid:gid
+    # network_mode: "host"
+    volumes:
+      - /mnt/f/media:/media
+      - /mnt/c/Users/peter/Jellyfin/config:/config
+      - /mnt/c/Users/peter/Jellyfin/cache:/cache
+    restart: "unless-stopped"
+    # Optional - alternative address used for autodiscovery
+    #environment:
+    #  - JELLYFIN_PublishedServerUrl=http://example.com

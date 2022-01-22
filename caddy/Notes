@@ -1,0 +1,7 @@
+To reload Caddy file, run the following command:
+docker exec -w /etc/caddy 0e0 caddy reload
+
+(replace 0e0 with the containers id)
+
+To view docker volume contents in explorer:
+\\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes
